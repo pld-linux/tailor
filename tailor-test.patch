@@ -1,0 +1,14 @@
+--- tailor.orig	2007-06-27 21:28:22.000000000 +0200
++++ tailor	2007-06-27 21:31:14.000000000 +0200
+@@ -21,10 +21,7 @@
+ 
+     locale.setlocale(locale.LC_CTYPE, '')
+     if len(sys.argv)>1 and sys.argv[1] == 'test':
+-        from vcpx.tests import main
+-        sys.argv[0] += " test"
+-        del sys.argv[1]
+-        main()
++            print "Running tests is not possible on installed package"
+     else:
+         from vcpx.tailor import main, TailorException
+ 
